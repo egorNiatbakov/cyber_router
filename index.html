@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Роутер: Кибер-аркада</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="430" height="900"></canvas>
+        
+        <div id="ui-container">
+            <div id="wifi-icon">📶</div>
+            <div id="score-display">0</div>
+            <div id="power-up-timer" class="power-up-indicator">VPN: 0с</div>
+            <div id="debug-info" class="debug-info">Статус: Ожидание запуска</div>
+        </div>
+        
+        <div id="start-screen" class="screen">
+            <h1>VPN РОУТЕР</h1>
+            <p>Внутри системного блока: обходи блокировки РКН!</p>
+            <div class="instructions">
+                <p>Тап по экрану - прыжок</p>
+                <p>Собирай ключи для ускорения</p>
+                <p>Лови Telegram для полета!</p>
+            </div>
+            <div class="controls-info">
+                <div class="tap-area">👆</div>
+            </div>
+            <button id="start-btn">ЗАПУСК СИСТЕМЫ</button>
+        </div>
+        
+        <div id="game-over" class="screen">
+            <h2>СОЕДИНЕНИЕ ПРЕРВАНО!</h2>
+            <p>Роутер заблокирован РКН</p>
+            <p class="score">Счет: <span id="final-score">0</span></p>
+            <p class="score">Рекорд: <span id="high-score">0</span> <span class="vpn-badge">VPN</span></p>
+            <button id="restart-btn">ПЕРЕЗАГРУЗИТЬ</button>
+        </div>
+
+        <div id="ko-overlay" class="ko-overlay">
+            <div class="ko-text">K.O.</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
